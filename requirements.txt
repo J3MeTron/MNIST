@@ -1,0 +1,15 @@
+# Зависимости проекта.
+#
+# Локально (PyCharm):
+#     python3 -m venv .venv
+#     .venv/bin/pip install -r requirements.txt
+#
+# В Google Colab ставить ничего не нужно: torch, matplotlib, requests и numpy
+# там уже предустановлены.
+#
+# Версии указаны как минимальные - проект не использует ничего нового из API
+# и работает на любой свежей сборке. Проверено на torch 2.14.1 / Python 3.13.
+
+torch>=2.0
+matplotlib>=3.7
+requests>=2.28
