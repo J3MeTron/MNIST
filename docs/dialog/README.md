@@ -47,3 +47,6 @@
 | [00-postanovka.md](00-postanovka.md) | Исходная задача и что было в папке |
 | [01-utochnenie-resheniy.md](01-utochnenie-resheniy.md) | Четыре развилки: глубина, архитектура, структура, шаг обучения |
 | [02-realizaciya.md](02-realizaciya.md) | Сборка проекта, численные результаты, найденные ошибки |
+| [03-zapusk-okruzhenie.md](03-zapusk-okruzhenie.md) | Ноутбук 01 не запускался: интерпретатор PyCharm и Jupyter в venv |
+| [04-pycharm-heap-dump.md](04-pycharm-heap-dump.md) | Heap dump PyCharm на ноутбуке 02: куча JVM, а не ноутбук |
+| [05-pycharm-oom-indeksaciya-torch.md](05-pycharm-oom-indeksaciya-torch.md) | Повторный OOM уже на 4 ГБ: настоящая причина - индексация torch |

@@ -1,8 +1,13 @@
 # Зависимости проекта.
 #
-# Локально (PyCharm):
+# Локально (PyCharm / Jupyter):
 #     python3 -m venv .venv
 #     .venv/bin/pip install -r requirements.txt
+#
+# ВАЖНО: после установки указать PyCharm интерпретатор именно из .venv
+#     Settings -> Project -> Python Interpreter -> Add -> Existing -> .venv/bin/python
+# Иначе PyCharm возьмет системный Python, где torch нет, и ноутбуки упадут
+# на первой ячейке с ModuleNotFoundError: No module named 'torch'.
 #
 # В Google Colab ставить ничего не нужно: torch, matplotlib, requests и numpy
 # там уже предустановлены.
@@ -10,6 +15,14 @@
 # Версии указаны как минимальные - проект не использует ничего нового из API
 # и работает на любой свежей сборке. Проверено на torch 2.14.1 / Python 3.13.
 
+# --- нужно для работы кода ---
 torch>=2.0
 matplotlib>=3.7
 requests>=2.28
+
+# --- нужно для запуска ноутбуков локально ---
+# В Colab не требуется. Если ноутбуки открываются только в Colab,
+# эти три строки можно не ставить.
+notebook>=7.0
+ipykernel>=6.0
+nbformat>=5.0
